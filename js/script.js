@@ -1,4 +1,9 @@
-$("button").click(function(){
+$(document).ready(function () {
+  resetValues()
+});
+
+
+$("#calculate").click(function(){
 
     let totalViews = parseInt($('#floatingInputViews1').val())+parseInt($('#floatingInputViews2').val())+parseInt($('#floatingInputViews3').val())
     let totalLikes = parseInt($('#floatingInputLikes1').val())+parseInt($('#floatingInputLikes2').val())+parseInt($('#floatingInputLikes3').val())
@@ -15,3 +20,31 @@ $("button").click(function(){
 
 
   });
+
+  $("#clear").click(function(){
+    resetValues()
+
+
+  });
+
+  function resetValues(i){
+    $('#floatingInputViews1').val(i)
+    $('#floatingInputViews2').val(i)
+    $('#floatingInputViews3').val(i)
+    $('#floatingInputViews4').val(i)
+
+    $('#floatingInputLikes1').val(i)
+    $('#floatingInputLikes2').val(i)
+    $('#floatingInputLikes3').val(i)
+    $('#floatingInputLikes4').val(i)
+
+    $('#floatingInputComments1').val(i)
+    $('#floatingInputComments2').val(i)
+    $('#floatingInputComments3').val(i)
+    $('#floatingInputComments4').val(i)
+
+    $('#floatingInputShares1').val(i)
+    $('#floatingInputShares2').val(i)
+    $('#floatingInputShares3').val(i)
+    $('#floatingInputShares4').val(i)
+  }
