@@ -12,10 +12,11 @@ $("#calculate").click(function(){
     let points = totalViews+totalLikes/5+totalComments*7+totalShares*2
     let bonusPoints = 500*(parseInt(parseInt($('#floatingInputViews1').val())/5000)+parseInt(parseInt($('#floatingInputViews2').val())/5000)+parseInt(parseInt($('#floatingInputViews3').val())/5000)+parseInt(parseInt($('#floatingInputViews4').val())/5000)+parseInt(parseInt($('#floatingInputViews5').val())/5000)+parseInt(parseInt($('#floatingInputViews6').val())/5000)+parseInt(parseInt($('#floatingInputViews7').val())/5000))
     let totalPoints = points + bonusPoints;
-    $("#totalViews").html("Total Views: "+totalViews);
-    $("#totalLikes").html("Total Likes: "+totalLikes);
-    $("#totalComments").html("Total Comments: "+totalComments);
-    $("#totalShares").html("Total Shares: "+totalShares);
+
+    $("#totalViews").html("Total Views: "+totalViews+" ("+parseInt(totalViews+bonusPoints)+" points)");
+    $("#totalLikes").html("Total Likes: "+totalLikes+" ("+parseInt(totalLikes/5)+" points)");
+    $("#totalComments").html("Total Comments: "+totalComments+" ("+parseInt(totalComments*7)+" points)");
+    $("#totalShares").html("Total Shares: "+totalShares+" ("+parseInt(totalShares*2)+" points)");
     $("#totalPoints").html("Total Points: "+totalPoints);
 
 
@@ -39,4 +40,9 @@ $("#calculate").click(function(){
 
   function resetValues(i){
     $('input').val(i)
+    $("#totalViews").html("Total Views: ");
+    $("#totalLikes").html("Total Likes: ");
+    $("#totalComments").html("Total Comments: ");
+    $("#totalShares").html("Total Shares: ");
+    $("#totalPoints").html("Total Points: ");
   }
