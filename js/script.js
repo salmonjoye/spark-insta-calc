@@ -2,6 +2,8 @@ $(document).ready(function () {
   resetValues(0)
 });
 
+let totalPoints = 0
+
 
 $("#calculate").click(function(){
 
@@ -11,7 +13,7 @@ $("#calculate").click(function(){
     let totalShares = parseInt($('#floatingInputShares1').val())+parseInt($('#floatingInputShares2').val())+parseInt($('#floatingInputShares3').val())+parseInt($('#floatingInputShares4').val())+parseInt($('#floatingInputShares5').val())+parseInt($('#floatingInputShares6').val())+parseInt($('#floatingInputShares7').val())
     let points = totalViews+totalLikes/5+totalComments*7+totalShares*2
     let bonusPoints = 500*(parseInt(parseInt($('#floatingInputViews1').val())/5000)+parseInt(parseInt($('#floatingInputViews2').val())/5000)+parseInt(parseInt($('#floatingInputViews3').val())/5000)+parseInt(parseInt($('#floatingInputViews4').val())/5000)+parseInt(parseInt($('#floatingInputViews5').val())/5000)+parseInt(parseInt($('#floatingInputViews6').val())/5000)+parseInt(parseInt($('#floatingInputViews7').val())/5000))
-    let totalPoints = points + bonusPoints;
+    totalPoints = points + bonusPoints;
 
     $("#totalViews").html("Total Views: "+totalViews+" ("+parseInt(totalViews+bonusPoints)+" points)");
     $("#totalLikes").html("Total Likes: "+totalLikes+" ("+parseInt(totalLikes/5)+" points)");
@@ -48,5 +50,22 @@ $("#calculate").click(function(){
   }
 
   function goToURL(){
-    location.href = "whatsapp://send?text=The text to share!"
+    let captain = $("#captain option:selected").text()
+    let support = $("#support option:selected").text()
+
+    if(captain === "Select Captain Branch"){
+alert("Select Captain Branch");
+    }
+    else if(support === "Select Supporting Branch"){
+      alert("Select Supporting Branch");
+    }
+    else{
+    let message = `Captain Branch: ${captain} %0ASupport Branch: ${support} %0ATotal Points: ${totalPoints}`
+    message = message.replace(/ /g,"%20")
+    let link = "whatsapp://send?text="+message
+
+    console.log(link)
+
+    location.href = link
+    }
   }
