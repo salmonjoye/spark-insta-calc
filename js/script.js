@@ -22,7 +22,15 @@ $("#calculate").click(function(){
   });
 
   $('input').focus(function(){
-    $(this).val("")
+    if($(this).val()==0){
+      $(this).val("")
+    }
+  })
+
+  $('input').blur(function(){
+ if($(this).val()===""){
+  $(this).val(0)
+ } 
   })
 
   $("#clear").click(function(){
@@ -31,5 +39,4 @@ $("#calculate").click(function(){
 
   function resetValues(i){
     $('input').val(i)
-
   }
