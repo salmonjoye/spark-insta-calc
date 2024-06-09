@@ -1,374 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Insta-Calc</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
-
+  <body>
     <form>
-    <!-- First Video -->
-    <div class="container">
-
+      <!-- First Video -->
+      <div class="container">
         <div class="d-flex flex-column mb-3 justify-content-around">
-            <div class="p-3">
-                <h5 class="my-1">First Video</h5>
+          <div class="p-3">
+            <h5 class="my-1">First Video</h5>
+          </div>
+          <div class="p-3">
+            <div class="form-floating mb-3 mx-3">
+              <input
+                class="form-control"
+                type="number"
+                id="floatingInputViews1"
+                placeholder="Number of views"
+              />
+              <label for="floatingInputViews1">Views</label>
+              <div class="valid-feedback">Looks good!</div>
             </div>
-            <div class="p-3">
-                <div class="form-floating mb-3 mx-3">
-                    <input class="form-control" type="number" id="floatingInputViews1" placeholder="Number of views">
-                    <label for="floatingInputViews1">Views</label>
-                    <div class="valid-feedback">Looks good!</div>
-                </div>
-            </div>
+          </div>
 
-            <div class="p-3">
-                <div class="form-floating mb-3 mx-3">
-                    <input type="number" class="form-control" id="floatingInputLikes1" placeholder="Number of likes">
-                    <label for="floatingInputLikes1">Likes</label>
-                </div>
+          <div class="p-3">
+            <div class="form-floating mb-3 mx-3">
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInputLikes1"
+                placeholder="Number of likes"
+              />
+              <label for="floatingInputLikes1">Likes</label>
             </div>
+          </div>
 
-            <div class="p-3">
-                <div class="form-floating mb-3 mx-3">
-                    <input type="number" class="form-control" id="floatingInputComments1"
-                        placeholder="Number of comments more than 10 words">
-                    <label for="floatingInputComments1">Comments</label>
-                </div>
+          <div class="p-3">
+            <div class="form-floating mb-3 mx-3">
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInputComments1"
+                placeholder="Number of comments more than 10 words"
+              />
+              <label for="floatingInputComments1">Comments</label>
             </div>
+          </div>
 
-            <div class="p-3">
-                <div class="form-floating mb-3 mx-3">
-                    <input type="number" class="form-control" id="floatingInputShares1" placeholder="Number of shares">
-                    <label for="floatingInputShares1">Shares</label>
-                </div>
+          <div class="p-3">
+            <div class="form-floating mb-3 mx-3">
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInputShares1"
+                placeholder="Number of shares"
+              />
+              <label for="floatingInputShares1">Shares</label>
             </div>
-
+          </div>
         </div>
+      </div>
 
-    </div>
-
-    <hr>
-<!-- Second Video -->
-    <div class="container">
-
-
+      <hr />
+      <!-- Second Video -->
+      <div class="container">
         <div class="d-flex flex-column mb-3 justify-content-around">
-            <div class="p-3">
-                <h5 class="my-1">Second Video</h5>
+          <div class="p-3">
+            <h5 class="my-1">Second Video</h5>
+          </div>
+          <div class="p-3">
+            <div class="form-floating mb-3 mx-3">
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInputViews2"
+                placeholder="Number of views"
+              />
+              <label for="floatingInputViews2">Views</label>
             </div>
-            <div class="p-3">
-                <div class="form-floating mb-3 mx-3">
-                    <input type="number" class="form-control" id="floatingInputViews2" placeholder="Number of views">
-                    <label for="floatingInputViews2">Views</label>
-                </div>
-            </div>
+          </div>
 
-            <div class="p-3">
-                <div class="form-floating mb-3 mx-3">
-                    <input type="number" class="form-control" id="floatingInputLikes2" placeholder="Number of likes">
-                    <label for="floatingInputLikes2">Likes</label>
-                </div>
+          <div class="p-3">
+            <div class="form-floating mb-3 mx-3">
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInputLikes2"
+                placeholder="Number of likes"
+              />
+              <label for="floatingInputLikes2">Likes</label>
             </div>
-            
+          </div>
 
-            <div class="p-3">
-                <div class="form-floating mb-3 mx-3">
-                    <input type="number" class="form-control" id="floatingInputComments2"
-                        placeholder="Number of comments more than 10 words">
-                    <label for="floatingInputComments2">Comments</label>
-                </div>
+          <div class="p-3">
+            <div class="form-floating mb-3 mx-3">
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInputComments2"
+                placeholder="Number of comments more than 10 words"
+              />
+              <label for="floatingInputComments2">Comments</label>
             </div>
+          </div>
 
-            <div class="p-3">
-                <div class="form-floating mb-3 mx-3">
-                    <input type="number" class="form-control" id="floatingInputShares2" placeholder="Number of shares">
-                    <label for="floatingInputShares2">Shares</label>
-                </div>
+          <div class="p-3">
+            <div class="form-floating mb-3 mx-3">
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInputShares2"
+                placeholder="Number of shares"
+              />
+              <label for="floatingInputShares2">Shares</label>
             </div>
-
+          </div>
         </div>
+      </div>
 
-    </div>
+      <hr />
 
-    <hr>
-
-    <!-- Third Video -->
-    <div class="container">
-
-
+      <!-- Third Video -->
+      <div class="container">
         <div class="d-flex flex-column mb-3 justify-content-around">
-            <div class="p-3">
-                <h5 class="my-1">Third Video</h5>
+          <div class="p-3">
+            <h5 class="my-1">Third Video</h5>
+          </div>
+          <div class="p-3">
+            <div class="form-floating mb-3 mx-3">
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInputViews3"
+                placeholder="Number of views"
+              />
+              <label for="floatingInputViews3">Views</label>
             </div>
-            <div class="p-3">
-                <div class="form-floating mb-3 mx-3">
-                    <input type="number" class="form-control" id="floatingInputViews3" placeholder="Number of views">
-                    <label for="floatingInputViews3">Views</label>
-                </div>
-            </div>
+          </div>
 
-            <div class="p-3">
-                <div class="form-floating mb-3 mx-3">
-                    <input type="number" class="form-control" id="floatingInputLikes3" placeholder="Number of likes">
-                    <label for="floatingInputLikes3">Likes</label>
-                </div>
+          <div class="p-3">
+            <div class="form-floating mb-3 mx-3">
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInputLikes3"
+                placeholder="Number of likes"
+              />
+              <label for="floatingInputLikes3">Likes</label>
             </div>
+          </div>
 
-            <div class="p-3">
-                <div class="form-floating mb-3 mx-3">
-                    <input type="number" class="form-control" id="floatingInputComments3"
-                        placeholder="Number of comments more than 10 words">
-                    <label for="floatingInputComments3">Comments</label>
-                </div>
+          <div class="p-3">
+            <div class="form-floating mb-3 mx-3">
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInputComments3"
+                placeholder="Number of comments more than 10 words"
+              />
+              <label for="floatingInputComments3">Comments</label>
             </div>
+          </div>
 
-            <div class="p-3">
-                <div class="form-floating mb-3 mx-3">
-                    <input type="number" class="form-control" id="floatingInputShares3" placeholder="Number of shares">
-                    <label for="floatingInputShares3">Shares</label>
-                </div>
+          <div class="p-3">
+            <div class="form-floating mb-3 mx-3">
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInputShares3"
+                placeholder="Number of shares"
+              />
+              <label for="floatingInputShares3">Shares</label>
             </div>
-
+          </div>
         </div>
+      </div>
 
-    </div>
+      <hr />
 
-    <hr>
-
-    <!-- Fourth Video -->
-    <div class="container">
-
-
+      <!-- Fourth Video -->
+      <div class="container">
         <div class="d-flex flex-column mb-3 justify-content-around">
-            <div class="p-3">
-                <h5 class="my-1">Fourth Video</h5>
+          <div class="p-3">
+            <h5 class="my-1">Fourth Video</h5>
+          </div>
+          <div class="p-3">
+            <div class="form-floating mb-3 mx-3">
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInputViews4"
+                placeholder="Number of views"
+              />
+              <label for="floatingInputViews4">Views</label>
             </div>
-            <div class="p-3">
-                <div class="form-floating mb-3 mx-3">
-                    <input type="number" class="form-control" id="floatingInputViews4" placeholder="Number of views">
-                    <label for="floatingInputViews4">Views</label>
-                </div>
-            </div>
+          </div>
 
-            <div class="p-3">
-                <div class="form-floating mb-3 mx-3">
-                    <input type="number" class="form-control" id="floatingInputLikes4" placeholder="Number of likes">
-                    <label for="floatingInputLikes4">Likes</label>
-                </div>
+          <div class="p-3">
+            <div class="form-floating mb-3 mx-3">
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInputLikes4"
+                placeholder="Number of likes"
+              />
+              <label for="floatingInputLikes4">Likes</label>
             </div>
+          </div>
 
-            <div class="p-3">
-                <div class="form-floating mb-3 mx-3">
-                    <input type="number" class="form-control" id="floatingInputComments4"
-                        placeholder="Number of comments more than 10 words">
-                    <label for="floatingInputComments4">Comments</label>
-                </div>
+          <div class="p-3">
+            <div class="form-floating mb-3 mx-3">
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInputComments4"
+                placeholder="Number of comments more than 10 words"
+              />
+              <label for="floatingInputComments4">Comments</label>
             </div>
+          </div>
 
-            <div class="p-3">
-                <div class="form-floating mb-3 mx-3">
-                    <input type="number" class="form-control" id="floatingInputShares4" placeholder="Number of shares">
-                    <label for="floatingInputShares4">Shares</label>
-                </div>
+          <div class="p-3">
+            <div class="form-floating mb-3 mx-3">
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInputShares4"
+                placeholder="Number of shares"
+              />
+              <label for="floatingInputShares4">Shares</label>
             </div>
-
+          </div>
         </div>
+      </div>
 
-    </div>
+      <hr />
 
-    <hr>
-
-    <!-- Fifth Video -->
-    <div class="container">
-
-
+      <!-- Fifth Video -->
+      <div class="container">
         <div class="d-flex flex-column mb-3 justify-content-around">
-            <div class="p-3">
-                <h5 class="my-1">Fifth Video</h5>
+          <div class="p-3">
+            <h5 class="my-1">Fifth Video</h5>
+          </div>
+          <div class="p-3">
+            <div class="form-floating mb-3 mx-3">
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInputViews5"
+                placeholder="Number of views"
+              />
+              <label for="floatingInputViews5">Views</label>
             </div>
-            <div class="p-3">
-                <div class="form-floating mb-3 mx-3">
-                    <input type="number" class="form-control" id="floatingInputViews5" placeholder="Number of views">
-                    <label for="floatingInputViews5">Views</label>
-                </div>
-            </div>
+          </div>
 
-            <div class="p-3">
-                <div class="form-floating mb-3 mx-3">
-                    <input type="number" class="form-control" id="floatingInputLikes5" placeholder="Number of likes">
-                    <label for="floatingInputLikes5">Likes</label>
-                </div>
+          <div class="p-3">
+            <div class="form-floating mb-3 mx-3">
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInputLikes5"
+                placeholder="Number of likes"
+              />
+              <label for="floatingInputLikes5">Likes</label>
             </div>
+          </div>
 
-            <div class="p-3">
-                <div class="form-floating mb-3 mx-3">
-                    <input type="number" class="form-control" id="floatingInputComments5"
-                        placeholder="Number of comments more than 10 words">
-                    <label for="floatingInputComments5">Comments</label>
-                </div>
+          <div class="p-3">
+            <div class="form-floating mb-3 mx-3">
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInputComments5"
+                placeholder="Number of comments more than 10 words"
+              />
+              <label for="floatingInputComments5">Comments</label>
             </div>
+          </div>
 
-            <div class="p-3">
-                <div class="form-floating mb-3 mx-3">
-                    <input type="number" class="form-control" id="floatingInputShares5" placeholder="Number of shares">
-                    <label for="floatingInputShares5">Shares</label>
-                </div>
+          <div class="p-3">
+            <div class="form-floating mb-3 mx-3">
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInputShares5"
+                placeholder="Number of shares"
+              />
+              <label for="floatingInputShares5">Shares</label>
             </div>
-
+          </div>
         </div>
+      </div>
 
-    </div>
+      <hr />
 
- <hr>
-
- <!-- Sixth Video -->
- <div class="container">
-
-
-    <div class="d-flex flex-column mb-3 justify-content-around">
-        <div class="p-3">
+      <!-- Sixth Video -->
+      <div class="container">
+        <div class="d-flex flex-column mb-3 justify-content-around">
+          <div class="p-3">
             <h5 class="my-1">Sixth Video</h5>
-        </div>
-        <div class="p-3">
+          </div>
+          <div class="p-3">
             <div class="form-floating mb-3 mx-3">
-                <input type="number" class="form-control" id="floatingInputViews6" placeholder="Number of views">
-                <label for="floatingInputViews6">Views</label>
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInputViews6"
+                placeholder="Number of views"
+              />
+              <label for="floatingInputViews6">Views</label>
             </div>
-        </div>
+          </div>
 
-        <div class="p-3">
+          <div class="p-3">
             <div class="form-floating mb-3 mx-3">
-                <input type="number" class="form-control" id="floatingInputLikes6" placeholder="Number of likes">
-                <label for="floatingInputLikes6">Likes</label>
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInputLikes6"
+                placeholder="Number of likes"
+              />
+              <label for="floatingInputLikes6">Likes</label>
             </div>
-        </div>
+          </div>
 
-        <div class="p-3">
+          <div class="p-3">
             <div class="form-floating mb-3 mx-3">
-                <input type="number" class="form-control" id="floatingInputComments6"
-                    placeholder="Number of comments more than 10 words">
-                <label for="floatingInputComments6">Comments</label>
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInputComments6"
+                placeholder="Number of comments more than 10 words"
+              />
+              <label for="floatingInputComments6">Comments</label>
             </div>
-        </div>
+          </div>
 
-        <div class="p-3">
+          <div class="p-3">
             <div class="form-floating mb-3 mx-3">
-                <input type="number" class="form-control" id="floatingInputShares6" placeholder="Number of shares">
-                <label for="floatingInputShares6">Shares</label>
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInputShares6"
+                placeholder="Number of shares"
+              />
+              <label for="floatingInputShares6">Shares</label>
             </div>
+          </div>
         </div>
+      </div>
 
-    </div>
+      <hr />
 
-</div>
-
-<hr>
-
-
-<!-- Seventh Video -->
-<div class="container">
-
-
-    <div class="d-flex flex-column mb-3 justify-content-around">
-        <div class="p-3">
+      <!-- Seventh Video -->
+      <div class="container">
+        <div class="d-flex flex-column mb-3 justify-content-around">
+          <div class="p-3">
             <h5 class="my-1">Seventh Video</h5>
-        </div>
-        <div class="p-3">
+          </div>
+          <div class="p-3">
             <div class="form-floating mb-3 mx-3">
-                <input type="number" class="form-control" id="floatingInputViews7" placeholder="Number of views">
-                <label for="floatingInputViews7">Views</label>
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInputViews7"
+                placeholder="Number of views"
+              />
+              <label for="floatingInputViews7">Views</label>
             </div>
-        </div>
+          </div>
 
-        <div class="p-3">
+          <div class="p-3">
             <div class="form-floating mb-3 mx-3">
-                <input type="number" class="form-control" id="floatingInputLikes7" placeholder="Number of likes">
-                <label for="floatingInputLikes7">Likes</label>
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInputLikes7"
+                placeholder="Number of likes"
+              />
+              <label for="floatingInputLikes7">Likes</label>
             </div>
-        </div>
+          </div>
 
-        <div class="p-3">
+          <div class="p-3">
             <div class="form-floating mb-3 mx-3">
-                <input type="number" class="form-control" id="floatingInputComments7"
-                    placeholder="Number of comments more than 10 words">
-                <label for="floatingInputComments7">Comments</label>
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInputComments7"
+                placeholder="Number of comments more than 10 words"
+              />
+              <label for="floatingInputComments7">Comments</label>
             </div>
-        </div>
+          </div>
 
-        <div class="p-3">
+          <div class="p-3">
             <div class="form-floating mb-3 mx-3">
-                <input type="number" class="form-control" id="floatingInputShares7" placeholder="Number of shares">
-                <label for="floatingInputShares7">Shares</label>
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInputShares7"
+                placeholder="Number of shares"
+              />
+              <label for="floatingInputShares7">Shares</label>
             </div>
+          </div>
         </div>
+      </div>
 
-    </div>
+      <hr />
 
-</div>
-
-<hr>
-
-
-    <div class="d-flex flex-row mb-3 justify-content-around">
+      <!-- Buttons -->
+      <div class="d-flex flex-row mb-3 justify-content-around">
         <div class="9-3">
-            <button type="button" class="btn btn-primary" id="calculate">Calculate</button>
+          <button type="button" class="btn btn-primary" id="calculate">
+            Calculate
+          </button>
         </div>
 
         <div class="9-3">
-            <button type="button" class="btn btn-primary" id="clear">Reset All</button>
+          <button type="button" class="btn btn-primary" id="clear">
+            Reset All
+          </button>
         </div>
-        
-    </div>
+      </div>
+    </form>
 
-</form>
-
+    <!-- Points -->
     <div class="my-3 mx-3">
+      <div class="d-flex flex-row mb-3 justify-content-around">
+        <h1 id="totalPoints">Total Points:</h1>
+      </div>
 
-        <div class="d-flex flex-row mb-3 justify-content-around">
-            <h1 id="totalPoints">Total Points: </h1>
+      <div class="d-flex flex-row mb-3 justify-content-around">
+        <div class="p-3">
+          <h5 id="totalViews">Total Views:</h5>
         </div>
 
-        <div class="d-flex flex-row mb-3 justify-content-around" >
-            <div class="p-3">
-                <h5 id="totalViews">Total Views: </h5>
-            </div>
+        <div class="p-3">
+          <h5 id="totalLikes">Total Likes:</h5>
+        </div>
+      </div>
 
-            <div class="p-3">
-                <h5 id="totalLikes">Total Likes: </h5>
-            </div>
+      <div class="d-flex flex-row mb-3 justify-content-around">
+        <div class="p-3">
+          <h5 id="totalComments">Total Comments:</h5>
         </div>
 
-        <div class="d-flex flex-row mb-3 justify-content-around" >
-            <div class="p-3">
-                <h5 id="totalComments">Total Comments: </h5>
-            </div>
-
-            <div class="p-3">
-                <h5 id="totalShares">Total Shares: </h5>
-            </div>
-
+        <div class="p-3">
+          <h5 id="totalShares">Total Shares:</h5>
         </div>
-
-        
-
-
+      </div>
     </div>
 
+    <!-- Share on WhatsApp -->
+    <div class="d-flex flex-row mb-3 justify-content-around">
+      <div class="9-3">
+        <a href="javacript:void(0)" onclick="goToURL(); return false;">
+          <button type="button" class="btn btn-success" id="calculate">
+            Share on WhatsApp
+          </button>
+        </a>
+      </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./js/script.js">
-    </script>
-</body>
-
-
-
+    <script src="./js/script.js"></script>
+  </body>
 </html>

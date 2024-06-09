@@ -46,3 +46,7 @@ $("#calculate").click(function(){
     $("#totalShares").html("Total Shares: ");
     $("#totalPoints").html("Total Points: ");
   }
+
+  function goToURL(){
+    location.href = "whatsapp://send?text=The text to share!"
+  }
